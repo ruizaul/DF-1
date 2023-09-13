@@ -1,0 +1,479 @@
+/* Reiniciar algunos estilos predeterminados */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Establecer un color de fondo y una fuente para toda la página */
+body {
+  background-color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto;
+  /* Centrar contenido horizontalmente */
+}
+
+/* Estilo para el encabezado */
+header {
+  background: rgba(10, 10, 10, 0.9);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  backdrop-filter: blur(10px);
+}
+
+/* Estilo para la imagen del logotipo */
+header .logo img {
+  object-fit: contain;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Estilos predeterminados para la navegación */
+nav {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos predeterminados para la navegación */
+nav.show-menu {
+  background-color: rgb(24, 23, 23);
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 20px;
+  height: 100vh;
+  z-index: 10;
+}
+
+/* Clase para mostrar el menú móvil */
+nav a.show-link {
+  display: block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  /* 28px */
+}
+
+/* Estilo para el botón de navegación móvil */
+#mobile-menu-button {
+  display: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #cacaca;
+}
+
+/* Estilo para la sección del banner */
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/banner.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding: 150px 0;
+}
+
+/* Contenedor principal de contenido */
+main {
+  width: 100%;
+  margin: 0 auto;
+  /* Centrar contenido horizontalmente */
+  max-width: 1536px;
+  /* Establecer un ancho máximo */
+}
+
+/* Contenedor para las secciones */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 20px;
+}
+
+/* Estilo para la sección del juego de la semana */
+#juego-de-la-semana {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+}
+
+.juego {
+  text-align: center;
+}
+
+/* Estilo para la sección de comentarios */
+.comentarios {
+  margin-top: 20px;
+}
+
+.comentarios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comentarios li {
+  margin-bottom: 20px;
+}
+
+.comentarios img {
+  max-width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Estilo para la sección de los mejores juegos */
+#mejores-juegos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Estilo para la lista de los mejores juegos */
+#mejores-juegos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#mejores-juegos li {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#mejores-juegos img {
+  border-radius: 5px;
+  min-width: 150px;
+  max-width: 100%;
+}
+
+/* Estilo para la sección de próximos eventos */
+#proximos-eventos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Estilo para la lista de próximos eventos */
+#proximos-eventos ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#proximos-eventos li {
+  margin-bottom: 20px;
+}
+
+/* Estilo para la sección de Artículos */
+#articulos {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Estilo para cada artículo */
+.articulo {
+  margin-bottom: 20px;
+}
+
+.articulo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.articulo p {
+  font-size: 16px;
+}
+
+.articulo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Estilo para la sección de Foro */
+#foro {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/* Estilo para cada hilo de discusión en el foro */
+.hilo {
+  margin-bottom: 20px;
+}
+
+.hilo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hilo p {
+  font-size: 16px;
+}
+
+.hilo a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.comentarios {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+/* Estilo para el pie de página */
+.footer-distribuido {
+  background-color: rgb(24, 23, 23);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 20px 20px 20px;
+  overflow: hidden;
+}
+
+/* Pie de página izquierdo */
+.footer-distribuido .footer-izquierda {
+  float: left;
+}
+
+/* El nombre de la empresa */
+.footer-distribuido h3 {
+  color: #ffffff;
+  font: normal 36px 'Roboto', cursive;
+  margin: 0 0 10px;
+}
+
+.footer-distribuido h3 span {
+  color: #5383d3;
+}
+
+.footer-distribuido .footer-nombre {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Iconos sociales del pie de página */
+.footer-distribuido .footer-icons {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.footer-distribuido .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Pie de página derecho */
+.footer-distribuido .footer-derecha {
+  float: right;
+}
+
+.footer-distribuido .footer-derecha p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: #ffffff;
+}
+
+/* Formulario de contacto */
+.footer-distribuido form {
+  display: inline-block;
+}
+
+.footer-distribuido form input,
+.footer-distribuido form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distribuido ::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distribuido ::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+.footer-distribuido :-ms-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distribuido form input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-distribuido form textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-distribuido form button {
+  border-radius: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Mostrar los enlaces de navegación en pantallas pequeñas */
+  nav a {
+    display: block;
+    text-align: left;
+  }
+
+  /* Ocultar el botón de navegación móvil */
+  #mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  /* Ocultar los enlaces de navegación en pantallas pequeñas */
+  nav a {
+    display: none;
+  }
+
+  /* Mostrar el botón de navegación móvil */
+  #mobile-menu-button {
+    display: block;
+  }
+
+  /* Reducir el ancho del logotipo en pantallas pequeñas */
+  header .logo img {
+    max-width: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mejores-juegos li {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-distribuido {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distribuido .footer-nombre {
+    font-size: 12px;
+  }
+
+  .footer-distribuido form input,
+  .footer-distribuido form textarea {
+    width: 250px;
+  }
+
+  .footer-distribuido form button {
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-distribuido {
+    padding: 30px;
+  }
+
+  .footer-distribuido .footer-izquierda,
+  .footer-distribuido .footer-derecha {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distribuido .footer-izquierda {
+    margin-bottom: 40px;
+  }
+
+  .footer-distribuido form {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .footer-distribuido form button {
+    float: none;
+  }
+}
